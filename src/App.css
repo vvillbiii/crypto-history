@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+.wrapper {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+#cryptoList {
+  padding: 3em 2em;
+  border-radius: 0 2%;
+  height: 100vh;
+  background-color: rgba(222, 223, 224, 0.585);
+}
+
+#cryptoView {
+  padding: 2em 4em;
+  background-color: white;
+}
+
+.list {
+  height: 60vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.card {
+  display: flex;
+  padding: 1em;
+  margin-bottom: 1em;
+  border: 2px solid whtie;
+  background-color: white;
+  border-radius: 3%;
+}
+
+.card:hover {
+  background-color: black;
+  color: white;
+}
+
+.card img {
+  margin-right: 1em;
+}
+
+.crypto-search {
+  border: none;
+  padding: 0.5em;
+  border-radius: 3%;
+  margin: 2em 1em 2em 0;
+  width: 70%;
+}
+
+.btn {
+  padding: 0.3em;
+  border-radius: 2%;
+  border: 1px solid black;
+}
+
+.no-crypto-selected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  height: 100vh;
+}
+
+.bottom-list {
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-btn {
+  width: 50%;
+  padding: 0.3em;
+  border-radius: 2%;
+  border: 1px solid black;
+  margin-bottom: 6em;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.history {
+  padding: 0.5em 0;
+}
+
+.logo-ticker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.5em 0;
+}
+
