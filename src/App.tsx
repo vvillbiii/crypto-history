@@ -33,7 +33,7 @@ function App() {
     <div className="wrapper">
       <main>
         <section id="cryptoList">
-          <h1>Crypto professor</h1>
+          <h1>Crypto History</h1>
           <p>Learn about the top {data.length - 1} cryptocurrencies</p>
 
           <CryptoSearch
