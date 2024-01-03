@@ -1,30 +1,13 @@
-# React + TypeScript + Vite
+# Crypto History
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Introduction
 
-Currently, two official plugins are available:
+Welcome to "Crypto History", a React and TypeScript project designed for beginners who are eager to learn about the fascinating world of cryptocurrencies and dive into the fundamentals of React development. This project focuses on teaching the historical aspects of popular cryptocurrencies in an interactive and engaging way. By recreating this project, users will not only gain knowledge about various digital currencies but also learn key concepts of state management and props in React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Learning Objective
+The primary goal of this project is to provide a hands-on learning experience for beginners in React and TypeScript. Users will learn how to:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+* Utilize React components and TypeScript for building a web application.
+* Manage state in React and understand its importance in dynamic web applications.
+* Work with props to pass data between components.
+* Implement basic layout and styling for React components.
