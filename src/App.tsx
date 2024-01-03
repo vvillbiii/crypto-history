@@ -34,7 +34,7 @@ function App() {
       <main>
         <section id="cryptoList">
           <h1>Crypto History</h1>
-          <p>Learn about the top {data.length - 1} cryptocurrencies</p>
+          <p>Learn the history of {data.length - 1} cryptocurrencies</p>
 
           <CryptoSearch
             searchCrypto={searchCrypto}
