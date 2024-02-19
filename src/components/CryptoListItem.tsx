@@ -1,9 +1,13 @@
-export const CryptoListItem = ({ index, crypto, handleSelectCrypto }: any) => {
+import { useContext } from "react";
+import { CryptoContext } from "../store/crypto-context";
+
+export const CryptoListItem = ({ index, crypto }: any) => {
+  const {selectCrypto} = useContext(CryptoContext)
   return (
     <div
       className="card"
       key={index}
-      onClick={() => handleSelectCrypto(crypto)}>
+      onClick={() => selectCrypto(crypto)}>
       <div className="logo-ticker">
         <img
           src={crypto.image}

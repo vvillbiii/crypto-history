@@ -1,18 +1,14 @@
+import { useContext } from "react";
 import "../App.css";
 import { CryptoListItem } from "./CryptoListItem";
+import { CryptoContext } from "../store/crypto-context";
 
-const CryptoList = ({ cryptocurrency, handleSelectCrypto }: any) => {
+const CryptoList = () => {
+  const { cryptoCurrencies } = useContext(CryptoContext);
   return (
     <div className="list">
-      {cryptocurrency?.map((crypto: any, index: number) => {
-        return (
-          <CryptoListItem
-            key={index}
-            index={index}
-            crypto={crypto}
-            handleSelectCrypto={handleSelectCrypto}
-          />
-        );
+      {cryptoCurrencies?.map((crypto: any, index: number) => {
+        return <CryptoListItem key={index} index={index} crypto={crypto} />;
       })}
     </div>
   );

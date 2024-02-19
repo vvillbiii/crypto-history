@@ -1,17 +1,14 @@
-const CryptoSearch = ({ searchCrypto, handleFilter, handleSearch }: any) => {
+const CryptoSearch = ({ input, handleSearch }: any) => {
   return (
-    <>
+    <form onSubmit={(e) =>handleSearch(e)}>
       <input
         type="text"
-        value={searchCrypto}
         placeholder="search crypto"
         className="crypto-search"
-        onChange={(e) => handleSearch(e)}
+        ref={input}
       />
-      <button className="btn" onClick={handleFilter}>
-        Search
-      </button>
-    </>
+      <button className="btn">Search</button>
+    </form>
   );
 };
 
