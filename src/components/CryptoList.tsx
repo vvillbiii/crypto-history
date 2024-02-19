@@ -8,7 +8,7 @@ const CryptoList = () => {
   return (
     <div className="list">
       {cryptoCurrencies?.map((crypto: any, index: number) => {
-        return <CryptoListItem key={index} index={index} crypto={crypto} />;
+        return <CryptoListItem key={index} crypto={crypto} />;
       })}
     </div>
   );
