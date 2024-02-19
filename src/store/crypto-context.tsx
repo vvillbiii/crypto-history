@@ -5,4 +5,5 @@ export const CryptoContext = createContext({
   selectCrypto: (crypto: any) => {
     crypto;
   },
+  crypto: {},
 });

@@ -8,7 +8,7 @@ import CryptoSearch from "./components/CryptoSearch";
 import { data } from "./data.ts";
 
 function App() {
-  const [selectCrypto, setSelectCrypto] = useState(null);
+  const [selectCrypto, setSelectCrypto] = useState(undefined || {});
   const [searchCrypto, setSearchCrypto] = useState("");
   const [filterCrypto, setFilterCrypto] = useState(data);
 
@@ -34,8 +34,9 @@ function App() {
   const ctxValue = {
     cryptoCurrencies: filterCrypto,
     selectCrypto: handleSelectCrypto,
+    crypto: selectCrypto,
   };
-  
+
   return (
     <CryptoContext.Provider value={ctxValue}>
       <div className="wrapper">
@@ -62,7 +63,7 @@ function App() {
           </section>
           <section id="cryptoView">
             {selectCrypto ? (
-              <CryptoView crypto={selectCrypto} />
+              <CryptoView />
             ) : (
               <div className="no-crypto-selected">
                 <h2>Select a crypto to learn more about it</h2>

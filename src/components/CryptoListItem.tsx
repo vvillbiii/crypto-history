@@ -2,7 +2,9 @@ import { useContext } from "react";
 import { CryptoContext } from "../store/crypto-context";
 
 export const CryptoListItem = ({ index, crypto }: any) => {
-  const {selectCrypto} = useContext(CryptoContext)
+  const cryptoContext = useContext(CryptoContext)
+  const selectCrypto = cryptoContext.selectCrypto
+
   return (
     <div
       className="card"
