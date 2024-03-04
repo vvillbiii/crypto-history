@@ -1,6 +1,6 @@
 const CryptoSearch = ({ input, handleSearch }: any) => {
   return (
-    <form onSubmit={(e) =>handleSearch(e)}>
+    <form onSubmit={(e) => handleSearch(e)}>
       <input
         type="text"
         placeholder="search crypto"

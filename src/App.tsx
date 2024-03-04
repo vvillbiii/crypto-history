@@ -9,7 +9,7 @@ import { data } from "./data.ts";
 
 function App() {
   const [selectCrypto, setSelectCrypto] = useState(undefined || {});
-  const [searchCrypto, setSearchCrypto] = useState("");
+  const [searchCrypto, setSearchCrypto] = useState<string>("");
   const [filterCrypto, setFilterCrypto] = useState(data);
 
   const handleSelectCrypto = (crypto: any) => {
